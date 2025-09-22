@@ -1,22 +1,106 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon premier site</title>
+    <title>Accueil - Portfolio Ilan Benkaid</title>
+    <style>
+        body {
+            background: #e3f6fd;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 32px;
+            display: flex;
+            gap: 32px;
+            align-items: flex-start;
+        }
+        .infos {
+            flex: 1;
+        }
+        .infos h1 {
+            color: #0099cc;
+            font-size: 2.2em;
+            margin-bottom: 8px;
+        }
+        .infos p {
+            font-size: 1.05em;
+            color: #333;
+            margin-bottom: 18px;
+        }
+        .competences {
+            margin-bottom: 18px;
+        }
+        .competences strong {
+            color: #0099cc;
+        }
+        .cv-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .cv-image img {
+            max-width: 100%;
+            width: 340px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+        }
+        .header-icon {
+            font-size: 2.5em;
+        }
+        footer {
+            text-align: center;
+            margin: 32px 0 0 0;
+            color: #888;
+        }
+        a {
+            color: #0099cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Benkaid Ilan</h1>
-    <p>atuellement étudiant en BTS Services Informatiques aux Organisations (option SISR – Solutions d’Infrastructure, Systèmes et Réseaux), je suis passionné par l’administration des systèmes et réseaux. J’ai acquis des compétences en installation, configuration et maintenance d’infrastructures informatiques, en cybersécurité ainsi qu’en support technique aux utilisateurs.
-Rigoureux et curieux, je souhaite mettre mes connaissances au service d’une entreprise afin de contribuer à la gestion et à l’évolution de ses infrastructures tout en développant mes compétences sur le terrain</p>
-    <a href="https://github.com">Visitez mon GitHub</a>
-    <hr>
-    <h2>Mes compétences :</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Python</li>
-    </ul>
-    <img src="IMG/cv.png" alt="cv" width="50%" height="auto">
+    <div class="header">
+        <span class="header-icon">🏠</span>
+        <h1 style="color:#a89c92; font-size:2.5em; margin:0;">Accueil</h1>
+    </div>
+    <div class="container">
+        <div class="infos">
+            <h1>Ilan Benkaid</h1>
+            <p>Actuellement étudiant en BTS Services Informatiques aux Organisations (option SISR – Solutions d’Infrastructure, Systèmes et Réseaux), je suis passionné par l’administration des systèmes et réseaux.<br>
+            J’ai acquis des compétences en installation, configuration et maintenance d’infrastructures informatiques, en cybersécurité ainsi qu’en support technique aux utilisateurs.<br>
+            Rigoureux et curieux, je souhaite mettre mes connaissances au service d’une entreprise afin de contribuer à la gestion et à l’évolution de ses infrastructures tout en développant mes compétences sur le terrain.</p>
+            <div class="competences">
+                <strong>Compétences :</strong>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <a href="https://github.com">Visitez mon GitHub</a>
+        </div>
+        <div class="cv-image">
+            <img src="IMG/cv.png" alt="cv">
+        </div>
+    </div>
     <footer>
         <p>© 2025 - Mon portfolio</p>
     </footer>
