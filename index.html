@@ -266,140 +266,28 @@
         </div>
     </div>
     <div id="contact" class="container section-blanche">
-        <div class="infos" style="width:100%">
-            <h1 style="color:#0099cc;">Contactez-moi</h1>
-            <p style="margin-bottom:18px; color:#333;">N'hésitez pas à me contacter pour toute question, proposition de stage ou collaboration !</p>
-            <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start;">
-                <div style="flex:1; min-width:220px;">
-                    <form style="display:flex; flex-direction:column; gap:14px; background:#e3f6fd; border-radius:8px; padding:18px 22px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-                        <label for="nom" style="font-weight:500; color:#0099cc;">Nom</label>
-                        <input id="nom" name="nom" type="text" placeholder="Votre nom" style="padding:8px; border-radius:5px; border:1px solid #b2d8e6;">
-                        <label for="email" style="font-weight:500; color:#0099cc;">Email</label>
-                        <input id="email" name="email" type="email" placeholder="Votre email" style="padding:8px; border-radius:5px; border:1px solid #b2d8e6;">
-                        <label for="message" style="font-weight:500; color:#0099cc;">Message</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Votre message" style="padding:8px; border-radius:5px; border:1px solid #b2d8e6;"></textarea>
-                        <button type="submit" style="background:#0099cc; color:#fff; border:none; border-radius:5px; padding:10px 0; font-weight:600; font-size:1em; cursor:pointer; transition:background 0.2s;">Envoyer</button>
-                    </form>
-                </div>
-                <div style="flex:1; min-width:220px; display:flex; flex-direction:column; gap:16px; justify-content:center; align-items:center;">
-                    <div style="display:flex; align-items:center; gap:10px; color:#0099cc; font-size:1.1em;"><span style="font-size:1.5em;">📧</span> ilanbenkaid@gmail.com</div>
-                    <div style="display:flex; align-items:center; gap:10px; color:#0099cc; font-size:1.1em;"><span style="font-size:1.5em;">📱</span> 06 89 47 47 26</div>
-                    <div style="display:flex; align-items:center; gap:10px; color:#0099cc; font-size:1.1em;"><span style="font-size:1.5em;">📍</span> Tours, France</div>
-                    <a href="https://github.com" target="_blank" style="color:#0099cc; text-decoration:none; font-weight:500; display:flex; align-items:center; gap:8px;"><span style="font-size:1.5em;">💻</span> Mon GitHub</a>
+        <div class="infos contact-infos">
+            <h1 class="contact-title">Contactez-moi</h1>
+            <p class="contact-desc">N'hésitez pas à me contacter pour toute question, proposition de stage ou collaboration !</p>
+            <div class="contact-flex">
+                <form class="contact-form">
+                    <label for="nom">Nom</label>
+                    <input id="nom" name="nom" type="text" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Votre email">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Votre message"></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+                <div class="contact-details">
+                    <div class="contact-item"><span class="contact-icon">📧</span> ilanbenkaid@gmail.com</div>
+                    <div class="contact-item"><span class="contact-icon">📱</span> 06 89 47 47 26</div>
+                    <div class="contact-item"><span class="contact-icon">📍</span> Tours, France</div>
+                    <a href="https://github.com" target="_blank" class="contact-link"><span class="contact-icon">💻</span> Mon GitHub</a>
                 </div>
             </div>
         </div>
-        .contact-infos { 
-            width: 100%;
-        }
-        .contact-title {
-            color: #0099cc;
-            margin-bottom: 6px;
-            font-size: 2em;
-        }
-        .contact-desc {
-            margin-bottom: 22px;
-            color: #333;
-            font-size: 1.08em;
-        }
-        .contact-flex {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            align-items: flex-start;
-            justify-content: space-between;
-        }
-        .contact-form {
-            flex: 1;
-            min-width: 240px;
-            background: #e3f6fd;
-            border-radius: 12px;
-            padding: 24px 28px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-        .contact-form label {
-            font-weight: 600;
-            color: #0099cc;
-            margin-bottom: 2px;
-        }
-        .contact-form input,
-        .contact-form textarea {
-            padding: 9px;
-            border-radius: 6px;
-            border: 1px solid #b2d8e6;
-            font-size: 1em;
-            transition: border 0.2s;
-        }
-        .contact-form input:focus,
-        .contact-form textarea:focus {
-            border: 1.5px solid #0099cc;
-            outline: none;
-        }
-        .contact-form button {
-            background: linear-gradient(90deg, #0099cc 60%, #6ed6f7 100%);
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            padding: 12px 0;
-            font-weight: 700;
-            font-size: 1.08em;
-            cursor: pointer;
-            margin-top: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: background 0.2s, transform 0.2s;
-        }
-        .contact-form button:hover {
-            background: linear-gradient(90deg, #007fa3 60%, #4ec3e0 100%);
-            transform: translateY(-2px) scale(1.03);
-        }
-        .contact-details {
-            flex: 1;
-            min-width: 220px;
-            background: #f5fafd;
-            border-radius: 12px;
-            padding: 24px 28px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            display: flex;
-            flex-direction: column;
-            gap: 22px;
-            justify-content: center;
-            align-items: flex-start;
-        }
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: #0099cc;
-            font-size: 1.13em;
-            font-weight: 500;
-            background: #e3f6fd;
-            border-radius: 7px;
-            padding: 8px 14px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-        }
-        .contact-link {
-            color: #0099cc;
-            text-decoration: none;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 1.13em;
-            background: #e3f6fd;
-            border-radius: 7px;
-            padding: 8px 14px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-            transition: background 0.2s;
-        }
-        .contact-link:hover {
-            background: #d0f0fa;
-        }
-        .contact-icon {
-            font-size: 1.4em;
-        }
+        
     </div>
     <style>
     .section-blanche {
